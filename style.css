@@ -73,39 +73,54 @@ kbd {
   text-shadow: 0 0 10px #0e0f0f;
 }
 
+/* увеличение кнопок при нажатии */
+.playing.key {
+  transform: scale(1.1);
+}
+
+/* квадрат нот QWEASDZXC */
 .KeyQ {
+  grid-area: KeyQ;
   background: url('./img/drums/drum-1.png') no-repeat center;
   background-size: contain;
 }
 .KeyW {
+  grid-area: KeyW;
   background: url('./img/drums/drum-2.png') no-repeat center;
   background-size: contain;
 }
 .KeyE {
+  grid-area: KeyE;
   background: url('./img/drums/drum-3.png') no-repeat center;
   background-size: contain;
 }
 .KeyA {
+  grid-area: KeyA;
   background: url('./img/drums/drum-4.png') no-repeat center;
   background-size: contain;
 }
 .KeyS {
+  grid-area: KeyS;
   background: url('./img/drums/hang-drum.png') no-repeat center;
   background-size: contain;
 }
 .KeyD {
+  grid-area: KeyD;
   background: url('./img/drums/drum-5.png') no-repeat center;
   background-size: contain;
 }
 .KeyZ {
+  grid-area: KeyZ;
   background: url('./img/drums/drum-6.png') no-repeat center;
   background-size: contain;
 }
 .KeyX {
+  grid-area: KeyX;
   background: url('./img/drums/drum-7.png') no-repeat center;
   background-size: contain;
 }
 .KeyC {
+  grid-area: KeyC;
   background: url('./img/drums/drum-8.png') no-repeat center;
   background-size: contain;
 }
@@ -147,37 +162,4 @@ kbd {
 }
 .Equal {
   grid-area: Equal;
-}
-/* квадрат нот QWEASDZXC */
-.KeyQ {
-  grid-area: KeyQ;
-}
-.KeyW {
-  grid-area: KeyW;
-}
-.KeyE {
-  grid-area: KeyE;
-}
-.KeyA {
-  grid-area: KeyA;
-}
-.KeyS {
-  grid-area: KeyS;
-}
-.KeyD {
-  grid-area: KeyD;
-}
-.KeyZ {
-  grid-area: KeyZ;
-}
-.KeyX {
-  grid-area: KeyX;
-}
-.KeyC {
-  grid-area: KeyC;
-}
-
-/* увеличение кнопок при нажатии */
-.playing.key {
-  transform: scale(1.1);
 }
