@@ -36,12 +36,12 @@ body {
   overflow: hidden; /* предотвратит появление прокрутки при анимации расширения кнопок */
   grid-template-areas:
     '  .      .      .      .      .      .      .      .      .      .      .     .'
-    '  .      .      .      .   KeyQ   KeyQ   KeyW   KeyW   KeyE   KeyE      .     .'
-    '  .      .      .      .   KeyQ   KeyQ   KeyW   KeyW   KeyE   KeyE      .     .'
-    '  .      .      .      .   KeyA   KeyA   KeyS   KeyS   KeyD   KeyD      .     .'
-    '  .      .      .      .   KeyA   KeyA   KeyS   KeyS   KeyD   KeyD      .     .'
-    '  .      .      .      .   KeyZ   KeyZ   KeyX   KeyX   KeyC   KeyC      .     .'
-    '  .      .      .      .   KeyZ   KeyZ   KeyX   KeyX   KeyC   KeyC      .     .'
+    '  .      .      .     KeyQ   KeyQ   KeyW   KeyW   KeyE   KeyE    .      .     .'
+    '  .      .      .     KeyQ   KeyQ   KeyW   KeyW   KeyE   KeyE    .      .     .'
+    '  .      .      .     KeyA   KeyA   KeyS   KeyS   KeyD   KeyD    .      .     .'
+    '  .      .      .     KeyA   KeyA   KeyS   KeyS   KeyD   KeyD    .      .     .'
+    '  .      .      .     KeyZ   KeyZ   KeyX   KeyX   KeyC   KeyC    .      .     .'
+    '  .      .      .     KeyZ   KeyZ   KeyX   KeyX   KeyC   KeyC    .      .     .'
     '  .      .      .      .      .      .      .      .      .      .      .     .'
     '  .      .      .      .      .      .      .      .      .      .      .     .'
     '  .      .      .      .      .      .      .      .      .      .      .     .'
