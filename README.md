@@ -4,3 +4,4 @@
 
 🎵 Musical project: drum machine, playing musical instruments with the ability to record and use backing tracks. We plan to add loops and voice recording in the future. There are also plans to release the app on phones and tablets to provide a more realistic gaming experience. Enjoyer, create, love cheers.
 
+![Uploading preview.png…]()
