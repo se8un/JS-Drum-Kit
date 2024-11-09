@@ -1,6 +1,5 @@
 // AudioContext в Web Audio API обеспечивает более точный контроль над звуками, так как он позволяет напрямую управлять временем их начала. Это улучшает отзывчивость.
-
-const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+const audioContext = new window.AudioContext();
 
 // Объект для хранения аудиобуферов
 const soundBuffers = {};
