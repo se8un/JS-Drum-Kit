@@ -28,22 +28,23 @@ const soundsUtility = {
   Equal: new Audio('./sounds/zvuk-om.wav'),
 };
 
+// Переключатель для отслеживания состояния воспроизведения звука
+const isPlaying = {};
+
 // Устанавливаем preload="auto" для всех аудиофайлов
 Object.values(sounds).forEach((audio) => (audio.preload = 'auto'));
 Object.values(soundsLoop).forEach((audio) => (audio.preload = 'auto'));
 Object.values(soundsUtility).forEach((audio) => (audio.preload = 'auto'));
 
-// Переключатель для отслеживания состояния воспроизведения звука
-const isPlaying = {};
-
 // Установка цикличного воспроизведения для каждого звука
-for (let key in soundsLoop) {
-  soundsLoop[key].loop = true;
-  isPlaying[key] = false;
+for (let music in soundsLoop) {
+  soundsLoop[music].loop = true;
+  isPlaying[music] = false;
 }
 
-window.addEventListener('keydown', (e) => {
-  const key = e.code;
+function handlePlaySound(e) {
+  // Берет `data-key` из элемента при клике или `code` при нажатии клавиши
+  const key = e.code || e.target.dataset.key;
   let audio = null;
   const keyElement = document.querySelector(`.key[data-key="${key}"]`);
 
@@ -74,6 +75,7 @@ window.addEventListener('keydown', (e) => {
   }
 
   if (!audio || !keyElement) return;
+
   // Убираем класс 'playing' после окончания анимации
   setTimeout(() => keyElement.classList.remove('playing'), 100);
 
@@ -83,7 +85,11 @@ window.addEventListener('keydown', (e) => {
     keyElement.classList.add('playing');
     keyElement.classList.remove('playingMusic');
   }
-});
+}
+
+// Обработчики для нажатия клавиши и клике мыши
+window.addEventListener('keydown', handlePlaySound);
+window.addEventListener('click', handlePlaySound);
 
 // Обработчик для окончания анимации
 const keys = document.querySelectorAll('.key');
