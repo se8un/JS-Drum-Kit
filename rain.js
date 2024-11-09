@@ -13,7 +13,7 @@ function createRaindrop() {
     y: 0, // начинает с верхней части экрана
     speed: Math.random() * 5 + 2, // случайная скорость падения
     length: 10,
-    opacity: 0.1,
+    opacity: 0.2,
     // length: Math.random() * 20 + 10, // случайная длина капли
     // opacity: Math.random() * 0.5 + 0.2, // случайная прозрачность капли
   });

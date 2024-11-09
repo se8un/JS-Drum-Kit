@@ -1,15 +1,43 @@
+// металлофон
+// const sounds = {
+//   KeyQ: new Audio('./sounds/metalofon/zvuk-notyi-do.wav'),
+//   KeyW: new Audio('./sounds/metalofon/zvuk-notyi-re.wav'),
+//   KeyE: new Audio('./sounds/metalofon/zvuk-notyi-mi.wav'),
+//   KeyA: new Audio('./sounds/metalofon/zvuk-notyi-fa.wav'),
+//   KeyS: new Audio('./sounds/metalofon/zvuk-notyi-sol.wav'),
+//   KeyD: new Audio('./sounds/metalofon/zvuk-notyi-lya.wav'),
+//   KeyZ: new Audio('./sounds/metalofon/zvuk-notyi-si.wav'),
+//   KeyX: new Audio('./sounds/metalofon/zvuk-notyi-do-vo-vtoroy-oktave.wav'),
+//   KeyC: new Audio('./sounds//metalofon/zvuk-notyi-do.wav'),
+// };
+
+// пианино
 const sounds = {
-  KeyQ: new Audio('./sounds/metalofon/zvuk-notyi-do.wav'),
-  KeyW: new Audio('./sounds/metalofon/zvuk-notyi-re.wav'),
-  KeyE: new Audio('./sounds/metalofon/zvuk-notyi-mi.wav'),
-  KeyA: new Audio('./sounds/metalofon/zvuk-notyi-fa.wav'),
-  KeyS: new Audio('./sounds/metalofon/zvuk-notyi-sol.wav'),
-  KeyD: new Audio('./sounds/metalofon/zvuk-notyi-lya.wav'),
-  KeyZ: new Audio('./sounds/metalofon/zvuk-notyi-si.wav'),
-  KeyX: new Audio('./sounds/metalofon/zvuk-notyi-do-vo-vtoroy-oktave.wav'),
-  KeyC: new Audio('./sounds//metalofon/zvuk-notyi-do.wav'),
+  KeyQ: new Audio('./sounds/notes-pianino/zvuk-notyi-do-rastyanutyiy.wav'),
+  KeyW: new Audio('./sounds/notes-pianino/zvuk-notyi-re-rastyanutyiy.wav'),
+  KeyE: new Audio('./sounds/notes-pianino/zvuk-notyi-mi-rastyanutyiy.wav'),
+  KeyA: new Audio('./sounds/notes-pianino/zvuk-notyi-fa-rastyanutyiy.wav'),
+  KeyS: new Audio('./sounds/notes-pianino/zvuk-notyi-sol-rastyanutyiy.wav'),
+  KeyD: new Audio('./sounds/notes-pianino/zvuk-notyi-lya-rastyanutyiy.wav'),
+  KeyZ: new Audio('./sounds/notes-pianino/zvuk-notyi-si-rastyanutyiy.wav'),
+  KeyX: new Audio('./sounds/notes-pianino/zvuk-notyi-do-vo-vtoroy-oktave-rastyanutyiy.wav'),
+  KeyC: new Audio('./sounds/notes-pianino/zvuk-notyi-do-rastyanutyiy.wav'),
 };
 
+// скратч винила
+// const sounds = {
+//   KeyQ: new Audio('./sounds/skratch/skratch-1.wav'),
+//   KeyW: new Audio('./sounds/skratch/skratch-2.wav'),
+//   KeyE: new Audio('./sounds/skratch/skratch-3.wav'),
+//   KeyA: new Audio('./sounds/skratch/skratch-4.wav'),
+//   KeyS: new Audio('./sounds/skratch/skratch-5.wav'),
+//   KeyD: new Audio('./sounds/skratch/skratch-6.wav'),
+//   KeyZ: new Audio('./sounds/skratch/skratch-1.wav'),
+//   KeyX: new Audio('./sounds/skratch/skratch-1.wav'),
+//   KeyC: new Audio('./sounds/skratch/skratch-1.wav'),
+// };
+
+// разная музыка минуса
 const soundsLoop = {
   Digit1: new Audio('./sounds/zvuk-om.wav'),
   Digit2: new Audio('./sounds/melody/city-lights.wav'),
@@ -22,6 +50,20 @@ const soundsLoop = {
   Digit9: new Audio('./sounds/melody/whistlin-through-the-day.wav'),
   Digit0: new Audio('./sounds/zvuk-om.wav'),
 };
+
+// диджериду
+// const soundsLoop = {
+//   Digit1: new Audio('./sounds/zvuk-om.wav'),
+//   Digit2: new Audio('./sounds/didjerido/didjerido-1.wav'),
+//   Digit3: new Audio('./sounds/didjerido/didjerido-2.wav'),
+//   Digit4: new Audio('./sounds/didjerido/didjerido-3.wav'),
+//   Digit5: new Audio('./sounds/didjerido/didjerido-4.wav'),
+//   Digit6: new Audio('./sounds/didjerido/didjerido-5.wav'),
+//   Digit7: new Audio('./sounds/didjerido/didjerido-6.wav'),
+//   Digit8: new Audio('./sounds/zvuk-om.wav'),
+//   Digit9: new Audio('./sounds/zvuk-om.wav'),
+//   Digit0: new Audio('./sounds/zvuk-om.wav'),
+// };
 
 const soundsUtility = {
   Minus: new Audio('./sounds/zvuk-om.wav'),
