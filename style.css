@@ -84,6 +84,7 @@ body {
   transform: scale(1.1);
 }
 
+/* инверсия картинки при нажатии */
 .playingMusic {
   filter: invert(1);
 }
