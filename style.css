@@ -64,13 +64,19 @@ body {
   cursor: pointer;
 }
 
-/* текст кнопки */
-kbd {
+/* цифра нижних иконок */
+.digits kbd {
   align-self: flex-end;
   font-size: 10px;
   font-weight: bold;
   color: #000000;
-  text-shadow: 0 0 10px #0e0f0f;
+  text-shadow: 0 0 10px #ffffff;
+  margin-bottom: 2px;
+}
+
+/* символ кнопки */
+.letters kbd {
+  display: none;
 }
 
 /* увеличение кнопок при нажатии */
