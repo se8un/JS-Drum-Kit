@@ -1,49 +1,129 @@
-.keys {
-  display: flex;
-  flex: 1;
-  min-height: 100vh;
-  align-items: center;
-  justify-content: center;
-}
-body {
-  text-align: center;
-  background: url('./img/forest.jpg');
-  background-size: cover;
-  overflow: hidden;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html {
-  font-family: sans-serif;
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: url('./img/bg-sea-hang.webp');
+  background-size: cover; /* Масштабирует изображение, чтобы оно покрывало весь экран */
+  background-position: center; /* Центрирует изображение */
+  background-repeat: no-repeat; /* Избегает повторения изображения */
+  background-attachment: fixed; /* Фиксирует фон при прокрутке */
+}
+
+.container {
+  display: grid;
+  width: 100vw; /* Охватывает всю ширину экрана */
+  height: 100vh; /* Охватывает всю высоту экрана */
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  gap: 5px;
+  grid-template-areas:
+    '  .      .      .      .      .      .      .      .      .      .      .     .'
+    '  .      .      .      .   KeyQ   KeyQ   KeyW   KeyW   KeyE   KeyE      .     .'
+    '  .      .      .      .   KeyQ   KeyQ   KeyW   KeyW   KeyE   KeyE      .     .'
+    '  .      .      .      .   KeyA   KeyA   KeyS   KeyS   KeyD   KeyD      .     .'
+    '  .      .      .      .   KeyA   KeyA   KeyS   KeyS   KeyD   KeyD      .     .'
+    '  .      .      .      .   KeyZ   KeyZ   KeyX   KeyX   KeyC   KeyC      .     .'
+    '  .      .      .      .   KeyZ   KeyZ   KeyX   KeyX   KeyC   KeyC      .     .'
+    '  .      .      .      .      .      .      .      .      .      .      .     .'
+    '  .      .      .      .      .      .      .      .      .      .      .     .'
+    '  .      .      .      .      .      .      .      .      .      .      .     .'
+    '  .      .      .      .      .      .      .      .      .      .      .     .'
+    'Digit1 Digit2 Digit3 Digit4 Digit5 Digit6 Digit7 Digit8 Digit9 Digit0 Equal Minus';
 }
 
 .key {
-  border: 4px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  /* color: white; */
+  font-weight: bold;
+  background-color: 1d212a;
+  border: 2px solid #ffcc66;
   border-radius: 5px;
-  margin: 1rem;
-  font-size: 1.5rem;
-  padding: 1rem 0.5rem;
-  transition: all 0.09s ease;
-  width: 100px;
-  text-align: center;
-  color: white;
-  background: rgba(0, 0, 0, 0.4);
-  text-shadow: 0 0 5px black;
+  box-shadow: 0 2px 2px #ffcc66;
+  transition: transform 0.1s ease, box-shadow 0.1s ease, border-color 0.1s ease;
+  color: #ffcc66;
 }
 
+/* цифры */
+.Digit1 {
+  grid-area: Digit1;
+}
+.Digit2 {
+  grid-area: Digit2;
+}
+.Digit3 {
+  grid-area: Digit3;
+}
+.Digit4 {
+  grid-area: Digit4;
+}
+.Digit5 {
+  grid-area: Digit5;
+}
+.Digit6 {
+  grid-area: Digit6;
+}
+.Digit7 {
+  grid-area: Digit7;
+}
+.Digit8 {
+  grid-area: Digit8;
+}
+.Digit9 {
+  grid-area: Digit9;
+}
+.Digit0 {
+  grid-area: Digit0;
+}
+
+/* - + */
+.Minus {
+  grid-area: Minus;
+}
+.Equal {
+  grid-area: Equal;
+}
+
+/* первый квадрат нот */
+.KeyQ {
+  grid-area: KeyQ;
+}
+.KeyW {
+  grid-area: KeyW;
+}
+.KeyE {
+  grid-area: KeyE;
+}
+.KeyA {
+  grid-area: KeyA;
+}
+.KeyS {
+  grid-area: KeyS;
+}
+.KeyD {
+  grid-area: KeyD;
+}
+.KeyZ {
+  grid-area: KeyZ;
+}
+.KeyX {
+  grid-area: KeyX;
+}
+.KeyC {
+  grid-area: KeyC;
+}
+
+/* при нажатии */
 .playing {
   transform: scale(1.1);
   border-color: #ffc600;
   box-shadow: 0 0 10px #ffc600;
-}
-
-kbd {
-  display: block;
-  font-size: 40px;
-}
-
-.sound {
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #ffc600;
 }
