@@ -84,6 +84,10 @@ body {
   transform: scale(1.1);
 }
 
+.playingMusic {
+  filter: invert(1);
+}
+
 /* квадрат нот QWEASDZXC */
 .KeyQ {
   grid-area: KeyQ;
