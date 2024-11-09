@@ -1,8 +1,7 @@
 # 🎵 JS-DRUM-KIT 🎵
 
-🎵 Музыкальный проект драм-машина, игра на музыкальных инструментах с возможностью (пока нет) записи и использования минусов. В будущем планируем добавить лупы и запись. Также планируется выпустить это приложение на телефон и планшет, чтобы обеспечить более реалистичный игровой процесс. Наслаждающийся, твори, люби ура.
+🎵 Музыкальный проект драм-машина, игра на музыкальных инструментах. Жажимай на кнопки (QWE ASD ZXC) издавай звуки, внизу кнопки с цифрами включи себе минус и попробуй подыграть. Наслаждающийся, твори и радуйся, ура :)
 
-🎵 Musical project: drum machine, playing musical instruments with the ability to record and use backing tracks. We plan to add loops and voice recording in the future. There are also plans to release the app on phones and tablets to provide a more realistic gaming experience. Enjoyer, create, love cheers.
-
+🎵 Musical project drum machine, playing musical instruments. Press the buttons (QWE ASD ZXC), make sounds, at the bottom of the button with numbers, turn on your minus and try to play along. Enjoyer, create and rejoice, cheers :)
 
 ![preview](https://github.com/user-attachments/assets/b7c3b795-60dc-4b5a-a648-8ae6dba941fb)
