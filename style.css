@@ -15,6 +15,17 @@ body {
   background-attachment: fixed; /* Фиксирует фон при прокрутке */
 }
 
+/* дождь */
+#rainCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none; /* Чтобы не мешать взаимодействию с остальными элементами */
+  z-index: 1;
+}
+
 .container {
   display: grid;
   width: 100vw; /* Охватывает всю ширину экрана */
@@ -22,6 +33,7 @@ body {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
   gap: 5px;
+  overflow: hidden; /* предотвратит появление прокрутки при анимации расширения кнопок */
   grid-template-areas:
     '  .      .      .      .      .      .      .      .      .      .      .     .'
     '  .      .      .      .   KeyQ   KeyQ   KeyW   KeyW   KeyE   KeyE      .     .'
@@ -34,22 +46,31 @@ body {
     '  .      .      .      .      .      .      .      .      .      .      .     .'
     '  .      .      .      .      .      .      .      .      .      .      .     .'
     '  .      .      .      .      .      .      .      .      .      .      .     .'
-    'Digit1 Digit2 Digit3 Digit4 Digit5 Digit6 Digit7 Digit8 Digit9 Digit0 Equal Minus';
+    'Digit1 Digit2 Digit3 Digit4 Digit5 Digit6 Digit7 Digit8 Digit9 Digit0 Minus Equal';
 }
 
+.digits,
+.letters {
+  display: contents; /* Это позволяет каждому элементу внутри использовать grid-area */
+}
+
+/* кнопки */
 .key {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: transparent;
-  /* color: white; */
+  background: url('./img/hang-256.png') no-repeat center;
+  background-size: contain; /* Сохраняет пропорции изображения и отображает его целиком */
+  cursor: pointer;
+}
+
+/* текст кнопки */
+kbd {
+  align-self: flex-end;
+  font-size: 10px;
   font-weight: bold;
-  background-color: 1d212a;
-  border: 2px solid #ffcc66;
-  border-radius: 5px;
-  box-shadow: 0 2px 2px #ffcc66;
-  transition: transform 0.1s ease, box-shadow 0.1s ease, border-color 0.1s ease;
-  color: #ffcc66;
+  color: #000000;
+  text-shadow: 0 0 10px #0e0f0f;
 }
 
 /* цифры */
@@ -92,7 +113,7 @@ body {
   grid-area: Equal;
 }
 
-/* первый квадрат нот */
+/* квадрат нот QWEASDZXC */
 .KeyQ {
   grid-area: KeyQ;
 }
@@ -121,9 +142,7 @@ body {
   grid-area: KeyC;
 }
 
-/* при нажатии */
-.playing {
+/* увеличение кнопок при нажатии */
+.playing.key {
   transform: scale(1.1);
-  border-color: #ffc600;
-  box-shadow: 0 0 10px #ffc600;
 }
