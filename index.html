@@ -5,104 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>🎵 MUSIC KIT 🎵</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./favicon.png" type="image/png" />
   </head>
   <body>
+    <canvas id="rainCanvas"></canvas>
+
     <div class="keys container">
       <!-- цифры -->
-      <div data-key="Digit1" class="key Digit1">
-        <kbd>1</kbd>
-      </div>
-      <div data-key="Digit2" class="key Digit2">
-        <kbd>2</kbd>
-      </div>
-      <div data-key="Digit3" class="key Digit3">
-        <kbd>3</kbd>
-      </div>
-      <div data-key="Digit4" class="key Digit4">
-        <kbd>4</kbd>
-      </div>
-      <div data-key="Digit5" class="key Digit5">
-        <kbd>5</kbd>
-      </div>
-      <div data-key="Digit6" class="key Digit6">
-        <kbd>6</kbd>
-      </div>
-      <div data-key="Digit7" class="key Digit7">
-        <kbd>7</kbd>
-      </div>
-      <div data-key="Digit8" class="key Digit8">
-        <kbd>8</kbd>
-      </div>
-      <div data-key="Digit9" class="key Digit9">
-        <kbd>9</kbd>
-      </div>
-      <div data-key="Digit0" class="key Digit0">
-        <kbd>0</kbd>
+      <div class="digits">
+        <div data-key="Digit1" class="key Digit1">
+          <kbd>1</kbd>
+        </div>
+        <div data-key="Digit2" class="key Digit2">
+          <kbd>2</kbd>
+        </div>
+        <div data-key="Digit3" class="key Digit3">
+          <kbd>3</kbd>
+        </div>
+        <div data-key="Digit4" class="key Digit4">
+          <kbd>4</kbd>
+        </div>
+        <div data-key="Digit5" class="key Digit5">
+          <kbd>5</kbd>
+        </div>
+        <div data-key="Digit6" class="key Digit6">
+          <kbd>6</kbd>
+        </div>
+        <div data-key="Digit7" class="key Digit7">
+          <kbd>7</kbd>
+        </div>
+        <div data-key="Digit8" class="key Digit8">
+          <kbd>8</kbd>
+        </div>
+        <div data-key="Digit9" class="key Digit9">
+          <kbd>9</kbd>
+        </div>
+        <div data-key="Digit0" class="key Digit0">
+          <kbd>0</kbd>
+        </div>
+        <!-- - +  -->
+        <div data-key="Minus" class="key Minus">
+          <kbd>-</kbd>
+        </div>
+        <div data-key="Equal" class="key Equal">
+          <kbd>=</kbd>
+        </div>
       </div>
 
-      <!-- - +  -->
-      <div data-key="Minus" class="key Minus">
-        <kbd>-</kbd>
-      </div>
-      <div data-key="Equal" class="key Equal">
-        <kbd>=</kbd>
-      </div>
-
-      <!-- ноты -->
-      <div data-key="KeyQ" class="key KeyQ">
-        <kbd>Q</kbd>
-      </div>
-      <div data-key="KeyW" class="key KeyW">
-        <kbd>W</kbd>
-      </div>
-      <div data-key="KeyE" class="key KeyE">
-        <kbd>E</kbd>
-      </div>
-      <div data-key="KeyA" class="key KeyA">
-        <kbd>A</kbd>
-      </div>
-      <div data-key="KeyS" class="key KeyS">
-        <kbd>S</kbd>
-      </div>
-      <div data-key="KeyD" class="key KeyD">
-        <kbd>D</kbd>
-      </div>
-      <div data-key="KeyZ" class="key KeyZ">
-        <kbd>Z</kbd>
-      </div>
-      <div data-key="KeyX" class="key KeyX">
-        <kbd>X</kbd>
-      </div>
-      <div data-key="KeyC" class="key KeyC">
-        <kbd>C</kbd>
+      <div class="letters">
+        <!-- ноты -->
+        <div data-key="KeyQ" class="key KeyQ">
+          <kbd>Q</kbd>
+        </div>
+        <div data-key="KeyW" class="key KeyW">
+          <kbd>W</kbd>
+        </div>
+        <div data-key="KeyE" class="key KeyE">
+          <kbd>E</kbd>
+        </div>
+        <div data-key="KeyA" class="key KeyA">
+          <kbd>A</kbd>
+        </div>
+        <div data-key="KeyS" class="key KeyS">
+          <kbd>S</kbd>
+        </div>
+        <div data-key="KeyD" class="key KeyD">
+          <kbd>D</kbd>
+        </div>
+        <div data-key="KeyZ" class="key KeyZ">
+          <kbd>Z</kbd>
+        </div>
+        <div data-key="KeyX" class="key KeyX">
+          <kbd>X</kbd>
+        </div>
+        <div data-key="KeyC" class="key KeyC">
+          <kbd>C</kbd>
+        </div>
       </div>
     </div>
 
-    <audio data-key="KeyQ" src="./sounds/1.wav" preload="auto"></audio>
-    <audio data-key="KeyW" src="./sounds/2.wav" preload="auto"></audio>
-    <audio data-key="KeyE" src="./sounds/3.wav" preload="auto"></audio>
-    <audio data-key="KeyA" src="./sounds/4.wav" preload="auto"></audio>
-    <audio data-key="KeyS" src="./sounds/5.wav" preload="auto"></audio>
-    <audio data-key="KeyD" src="./sounds/6.wav" preload="auto"></audio>
-    <audio data-key="KeyZ" src="./sounds/7.wav" preload="auto"></audio>
-    <audio data-key="KeyX" src="./sounds/8.wav" preload="auto"></audio>
-    <audio data-key="KeyC" src="./sounds/9.wav" preload="auto"></audio>
+    <audio data-key="KeyQ" src="./sounds/metalofon/zvuk-notyi-do.wav" preload="auto"></audio>
+    <audio data-key="KeyW" src="./sounds/metalofon/zvuk-notyi-re.wav" preload="auto"></audio>
+    <audio data-key="KeyE" src="./sounds/metalofon/zvuk-notyi-mi.wav" preload="auto"></audio>
+    <audio data-key="KeyA" src="./sounds/metalofon/zvuk-notyi-fa.wav" preload="auto"></audio>
+    <audio data-key="KeyS" src="./sounds/metalofon/zvuk-notyi-do.wav" preload="auto"></audio>
+    <audio data-key="KeyD" src="./sounds/metalofon/zvuk-notyi-sol.wav" preload="auto"></audio>
+    <audio data-key="KeyZ" src="./sounds/metalofon/zvuk-notyi-lya.wav" preload="auto"></audio>
+    <audio data-key="KeyX" src="./sounds/metalofon/zvuk-notyi-si.wav" preload="auto"></audio>
+    <audio data-key="KeyC" src="./sounds//metalofon/zvuk-notyi-do-vo-vtoroy-oktave.wav" preload="auto"></audio>
 
-    <audio data-key="Digit1" src="./sounds/9.wav" preload="auto"></audio>
-    <audio data-key="Digit2" src="./sounds/9.wav" preload="auto"></audio>
-    <audio data-key="Digit3" src="./sounds/9.wav" preload="auto"></audio>
-    <audio data-key="Digit4" src="./sounds/9.wav" preload="auto"></audio>
-    <audio data-key="Digit5" src="./sounds/9.wav" preload="auto"></audio>
-    <audio data-key="Digit6" src="./sounds/9.wav" preload="auto"></audio>
-    <audio data-key="Digit7" src="./sounds/9.wav" preload="auto"></audio>
-    <audio data-key="Digit8" src="./sounds/9.wav" preload="auto"></audio>
-    <audio data-key="Digit9" src="./sounds/9.wav" preload="auto"></audio>
-    <audio data-key="Digit0" src="./sounds/9.wav" preload="auto"></audio>
+    <audio data-key="Digit1" src="./sounds/zvuk-om.wav" preload="auto"></audio>
+    <audio data-key="Digit2" src="./sounds/zvuk-om.wav" preload="auto"></audio>
+    <audio data-key="Digit3" src="./sounds/zvuk-om.wav" preload="auto"></audio>
+    <audio data-key="Digit4" src="./sounds/zvuk-om.wav" preload="auto"></audio>
+    <audio data-key="Digit5" src="./sounds/zvuk-om.wav" preload="auto"></audio>
+    <audio data-key="Digit6" src="./sounds/zvuk-om.wav" preload="auto"></audio>
+    <audio data-key="Digit7" src="./sounds/zvuk-om.wav" preload="auto"></audio>
+    <audio data-key="Digit8" src="./sounds/zvuk-om.wav" preload="auto"></audio>
+    <audio data-key="Digit9" src="./sounds/zvuk-om.wav" preload="auto"></audio>
+    <audio data-key="Digit0" src="./sounds/zvuk-om.wav" preload="auto"></audio>
 
-    <audio data-key="Minus" src="./sounds/9.wav"></audio>
-    <audio data-key="Equal" src="./sounds/9.wav"></audio>
+    <audio data-key="Minus" src="./sounds/zvuk-om.wav" preload="auto"></audio>
+    <audio data-key="Equal" src="./sounds/zvuk-om.wav" preload="auto"></audio>
 
     <script src="./main.js"></script>
     <!-- <script src="./audioContext.js"></script> -->
+    <script src="./rain.js"></script>
   </body>
 </html>
