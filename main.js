@@ -61,6 +61,7 @@ window.addEventListener('keydown', (e) => {
     } else {
       audio.play();
       keyElement.classList.add('playing');
+      keyElement.classList.add('playingMusic');
       isPlaying[key] = true;
     }
   }
@@ -69,8 +70,10 @@ window.addEventListener('keydown', (e) => {
     audio = soundsUtility[key];
     stopSound();
     audio.play();
+    keyElement.classList.remove('playingMusic');
   }
 
+  if (!audio || !keyElement) return;
   // Убираем класс 'playing' после окончания анимации
   setTimeout(() => keyElement.classList.remove('playing'), 100);
 
@@ -78,6 +81,7 @@ window.addEventListener('keydown', (e) => {
     audio.pause();
     audio.currentTime = 0;
     keyElement.classList.add('playing');
+    keyElement.classList.remove('playingMusic');
   }
 });
 
