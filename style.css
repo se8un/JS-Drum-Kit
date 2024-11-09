@@ -73,6 +73,11 @@ kbd {
   text-shadow: 0 0 10px #0e0f0f;
 }
 
+/* увеличение кнопок при нажатии */
+.playing.key {
+  transform: scale(1.1);
+}
+
 /* цифры */
 .Digit1 {
   grid-area: Digit1;
@@ -104,7 +109,6 @@ kbd {
 .Digit0 {
   grid-area: Digit0;
 }
-
 /* - + */
 .Minus {
   grid-area: Minus;
@@ -112,7 +116,6 @@ kbd {
 .Equal {
   grid-area: Equal;
 }
-
 /* квадрат нот QWEASDZXC */
 .KeyQ {
   grid-area: KeyQ;
@@ -140,9 +143,4 @@ kbd {
 }
 .KeyC {
   grid-area: KeyC;
-}
-
-/* увеличение кнопок при нажатии */
-.playing.key {
-  transform: scale(1.1);
 }
