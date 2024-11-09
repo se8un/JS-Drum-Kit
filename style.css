@@ -64,13 +64,51 @@ body {
   cursor: pointer;
 }
 
+.key {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('./img/drums/hang-drum.png') no-repeat center;
+  background-size: contain; /* Сохраняет пропорции изображения и отображает его целиком */
+  cursor: pointer;
+}
+
 /* текст кнопки */
-kbd {
-  align-self: flex-end;
-  font-size: 10px;
-  font-weight: bold;
-  color: #000000;
-  text-shadow: 0 0 10px #0e0f0f;
+.KeyQ {
+  background: url('./img/drums/drum-1.png') no-repeat center;
+  background-size: contain;
+}
+.KeyW {
+  background: url('./img/drums/drum-2.png') no-repeat center;
+  background-size: contain;
+}
+.KeyE {
+  background: url('./img/drums/drum-3.png') no-repeat center;
+  background-size: contain;
+}
+.KeyA {
+  background: url('./img/drums/drum-4.png') no-repeat center;
+  background-size: contain;
+}
+.KeyS {
+  background: url('./img/drums/hang-drum.png') no-repeat center;
+  background-size: contain;
+}
+.KeyD {
+  background: url('./img/drums/drum-5.png') no-repeat center;
+  background-size: contain;
+}
+.KeyZ {
+  background: url('./img/drums/drum-6.png') no-repeat center;
+  background-size: contain;
+}
+.KeyX {
+  background: url('./img/drums/drum-7.png') no-repeat center;
+  background-size: contain;
+}
+.KeyC {
+  background: url('./img/drums/drum-8.png') no-repeat center;
+  background-size: contain;
 }
 
 /* увеличение кнопок при нажатии */
