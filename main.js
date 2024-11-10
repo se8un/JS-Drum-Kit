@@ -1,28 +1,28 @@
 // пианино
-const sounds = {
-  KeyQ: new Audio('./sounds/pianino/zvuk-notyi-do-rastyanutyiy.wav'),
-  KeyW: new Audio('./sounds/pianino/zvuk-notyi-re-rastyanutyiy.wav'),
-  KeyE: new Audio('./sounds/pianino/zvuk-notyi-mi-rastyanutyiy.wav'),
-  KeyA: new Audio('./sounds/pianino/zvuk-notyi-fa-rastyanutyiy.wav'),
-  KeyS: new Audio('./sounds/pianino/zvuk-notyi-sol-rastyanutyiy.wav'),
-  KeyD: new Audio('./sounds/pianino/zvuk-notyi-lya-rastyanutyiy.wav'),
-  KeyZ: new Audio('./sounds/pianino/zvuk-notyi-si-rastyanutyiy.wav'),
-  KeyX: new Audio('./sounds/pianino/zvuk-notyi-do-vo-vtoroy-oktave-rastyanutyiy.wav'),
-  KeyC: new Audio('./sounds/pianino/zvuk-notyi-do-rastyanutyiy.wav'),
-};
+// const sounds = {
+//   KeyQ: new Audio('./sounds/pianino/zvuk-notyi-do-rastyanutyiy.wav'),
+//   KeyW: new Audio('./sounds/pianino/zvuk-notyi-re-rastyanutyiy.wav'),
+//   KeyE: new Audio('./sounds/pianino/zvuk-notyi-mi-rastyanutyiy.wav'),
+//   KeyA: new Audio('./sounds/pianino/zvuk-notyi-fa-rastyanutyiy.wav'),
+//   KeyS: new Audio('./sounds/pianino/zvuk-notyi-sol-rastyanutyiy.wav'),
+//   KeyD: new Audio('./sounds/pianino/zvuk-notyi-lya-rastyanutyiy.wav'),
+//   KeyZ: new Audio('./sounds/pianino/zvuk-notyi-si-rastyanutyiy.wav'),
+//   KeyX: new Audio('./sounds/pianino/zvuk-notyi-do-vo-vtoroy-oktave-rastyanutyiy.wav'),
+//   KeyC: new Audio('./sounds/pianino/zvuk-notyi-do-rastyanutyiy.wav'),
+// };
 
 // металлофон
-// const sounds = {
-//   KeyQ: new Audio('./sounds/metalofon/zvuk-notyi-do.wav'),
-//   KeyW: new Audio('./sounds/metalofon/zvuk-notyi-re.wav'),
-//   KeyE: new Audio('./sounds/metalofon/zvuk-notyi-mi.wav'),
-//   KeyA: new Audio('./sounds/metalofon/zvuk-notyi-fa.wav'),
-//   KeyS: new Audio('./sounds/metalofon/zvuk-notyi-sol.wav'),
-//   KeyD: new Audio('./sounds/metalofon/zvuk-notyi-lya.wav'),
-//   KeyZ: new Audio('./sounds/metalofon/zvuk-notyi-si.wav'),
-//   KeyX: new Audio('./sounds/metalofon/zvuk-notyi-do-vo-vtoroy-oktave.wav'),
-//   KeyC: new Audio('./sounds//metalofon/zvuk-notyi-do.wav'),
-// };
+const sounds = {
+  KeyQ: new Audio('./sounds/metalofon/zvuk-notyi-do.wav'),
+  KeyW: new Audio('./sounds/metalofon/zvuk-notyi-re.wav'),
+  KeyE: new Audio('./sounds/metalofon/zvuk-notyi-mi.wav'),
+  KeyA: new Audio('./sounds/metalofon/zvuk-notyi-fa.wav'),
+  KeyS: new Audio('./sounds/metalofon/zvuk-notyi-sol.wav'),
+  KeyD: new Audio('./sounds/metalofon/zvuk-notyi-lya.wav'),
+  KeyZ: new Audio('./sounds/metalofon/zvuk-notyi-si.wav'),
+  KeyX: new Audio('./sounds/metalofon/zvuk-notyi-do-vo-vtoroy-oktave.wav'),
+  KeyC: new Audio('./sounds//metalofon/zvuk-notyi-do.wav'),
+};
 
 // разная музыка минуса
 const soundsLoop = {
